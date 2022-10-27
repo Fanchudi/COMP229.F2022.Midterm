@@ -1,0 +1,70 @@
+<!--
+ * @Author: wyf 844650674@qq.com
+ * @Date: 2022-10-25 16:57:43
+ * @LastEditors: wyf 844650674@qq.com
+ * @LastEditTime: 2022-10-27 08:44:56
+ * @FilePath: \COMP229.F2022.Midterm.Template-master\views\todo\add_edit.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<%- include ('../partials/header') %>
+
+<!-- Content for the Add_Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <input type="hidden"
+                        name="id"
+                        value="<%= todo._id %>"
+                    >
+                    <label for="taskTextField">Task</label>
+                    <input type="text" class="form-control"
+                        id="taskTextField"
+                        placeholder="Enter the To-Do Task"
+                        name="task" 
+                        value="<%= todo.task %>"
+                        required>
+                </div>              
+
+                <div class="form-group">
+                    <label for="descriptionTextField">Description</label>
+                    <input type="text" class="form-control"
+                        id="descriptionTextField"
+                        placeholder="Enter the description"
+                        name="description" 
+                        value="<%= todo.description %>"
+                        >
+                </div>
+
+                <div class="form-group">
+                    <label for="completeTextField">Complete</label>
+                    <input type="checkbox"
+                    class="form-check-input"
+                    id="completeTextField"
+                    name="complete" 
+                    value=<%= todo.complete %>
+                    <%= todo.complete == true ? "checked" : "" %>
+                    >
+                </div>
+
+                <br/>
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> 
+                    Submit
+                </button>
+                
+                <a href="/todo/list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> 
+                    Cancel
+                </a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include ('../partials/footer') %>
