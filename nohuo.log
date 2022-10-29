@@ -14,3 +14,12 @@ Express app running on http://localhost:2000
 [0mGET /images/image_logo.JPG [36m304 [0m0.517 ms - -[0m
 [0mGET /jquery/dist/jquery.min.js [36m304 [0m1.018 ms - -[0m
 [0mGET /@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 [36m304 [0m0.832 ms - -[0m
+===> Original URL: undefined
+[0mGET / [32m200 [0m6.269 ms - 2559[0m
+[0mGET /jquery/dist/jquery.min.js [33m404 [0m3.877 ms - 1110[0m
+[0mGET /bootstrap/dist/css/bootstrap.min.css [33m404 [0m1.967 ms - 1110[0m
+[0mGET /@fortawesome/fontawesome-free/css/all.min.css [33m404 [0m3.904 ms - 1110[0m
+[0mGET /images/image_logo.JPG [36m304 [0m0.635 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.684 ms - -[0m
+[0mGET /bootstrap/dist/js/bootstrap.bundle.min.js [33m404 [0m2.203 ms - 1110[0m
+[0mGET /javascripts/appclient.js [36m304 [0m0.409 ms - -[0m
