@@ -60,5 +60,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-process.env.PORT = 2000;
+process.env.PORT = 3001;
 module.exports = app;
